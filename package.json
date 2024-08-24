@@ -1,0 +1,19 @@
+{
+  "name": "assignment_1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Ajinkya Kale",
+  "license": "ISC",
+  "description": "Assignment 1",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mssql": "^11.0.1",
+    "mysql2": "^3.11.0"
+  }
+}

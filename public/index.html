@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <!-- Section 1: Top Bar -->
+    <div class="top-bar">
+        <a href="#carousel" class="home-link">Home</a>
+        <div class="center-links">
+            <a href="#info-section-1">Task 1</a>
+            <a href="#heading-task-2">Task 2</a>
+            <a href="#heading-task-3">Task 3</a>
+        </div>
+        
+    </div>
+
+    <!-- Section 2: Image Carousel -->
+    <div class="carousel" id="carousel">
+        <button class="carousel-arrow left-arrow">&lt;</button>
+        <div class="carousel-container">
+            <img src="images/image1.jpg" alt="Image 1">
+            <img src="images/image2.jpg" alt="Image 2">
+            <img src="images/image3.jpg" alt="Image 3">
+        </div>
+        <button class="carousel-arrow right-arrow">&gt;</button>
+    </div>
+
+    <!-- Section 3: Two Columns of Text Info -->
+    <div class="info-section" id="info-section-1">
+        <div class="info-column">
+            <h2>Information</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="info-column">
+            <h2>Information</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+
+    <!-- Task 2 Information -->
+
+    <div  id="heading-task-2">
+
+        <div class="heading-task">
+            <h2 class="task-header">TASK 2</h2>
+        </div>
+
+        <div class="info-section" id="info-section-2">
+            <table id="customers-table">
+                <thead>
+                    <tr>
+                        <th>CustomerID</th>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>EmailAddress</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be populated here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+    <!-- Task 3 Information -->
+
+    <div id="heading-task-3">
+        <div class="heading-task" >
+            <h2 class="task-header">TASK 3</h2>
+        </div>
+
+        <div class="info-section" id="info-section-3" >
+            <table id="customers-table-2">
+                <thead>
+                    <tr>
+                        <th>ProductName</th>
+                        <th>Color</th>
+                        <th>Size</th>
+                        <th>Weight</th>
+    
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be populated here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+    
+
+    
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

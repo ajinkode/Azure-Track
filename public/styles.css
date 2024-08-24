@@ -1,0 +1,184 @@
+/* General Styles */
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+/* Section 1: Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 30px 0px; 
+}
+
+.home-link {
+    color: white;
+    position: absolute; /* Positioning relative to the .top-bar container */
+    top: 30px; /* Align with top padding of .top-bar */
+    left: 15vh; /* Align with right padding of .top-bar */
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s;
+    text-decoration: none;
+}
+
+.home-link:hover {
+    color: #ddd;
+}
+
+
+.center-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10vh; /* Space out links */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.center-links a:hover {
+    color: #ddd;
+}
+
+/* Section 2: Carousel */
+.carousel {
+    position: relative;
+    width: 50%; /* Carousel width is 70% of the viewport width */
+    height: 90vh; /* Carousel height is 70% of the viewport height */
+    overflow: hidden;
+    margin: auto; /* Center-align the carousel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    flex: 0 0 100%;
+}
+
+/* Arrow Buttons */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px; /* Increased padding for better size */
+    cursor: pointer;
+    font-size: 30px; /* Larger font size for arrows */
+    z-index: 1;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+/* Section 3: Two Columns of Text Info */
+.info-section {
+    display: flex;
+    justify-content: center; /* Center-align columns horizontally */
+    align-items: center; /* Center-align columns vertically */
+    /* padding: 40px 20px; */
+    box-sizing: border-box;
+    text-align: center; /* Center-align text within columns */
+    gap: 10vh; /* Add space between columns */
+    height: 100vh;
+    
+    /* margin: 50px; */
+}
+
+#info-section-2, #info-section-3{
+    height: 90vh;
+    /* padding-bottom: 50px; */
+    margin: -50px auto;
+}
+
+.info-column {
+    flex: 1;
+    max-width: 700px; /* Set a max-width for better readability */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.info-column h2 {
+    margin-top: 0;
+    font-size: 28px; /* Larger font size for headings */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+.info-column p {
+    margin: 0 auto;
+    font-size: 16px; /* Set a readable font size for paragraphs */
+    line-height: 1.6; /* Improve line spacing for readability */
+    /* width: 70%; */
+}
+
+.task-header{
+    padding-top: 100px;
+
+}
+
+
+/* Basic styles for the table */
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Table headers styling */
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: gray; /* Dark green background for headers */
+    color: white; /* White text color for headers */
+    font-weight: bold;
+}
+
+/* Table rows styling */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey background for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* White background for odd rows */
+}
+
+/* Table row hover effect */
+tr:hover {
+    background-color: #ddd; /* Light grey background on hover */
+}
+
+.heading-task{
+    text-align: center;
+}
